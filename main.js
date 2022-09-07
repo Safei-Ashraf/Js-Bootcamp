@@ -18,10 +18,26 @@
 
 // document.body.appendChild(header);
 
-//EX2:
-console.log(
-  "%cElzero %cWeb %cSchool",
-  "color: red; font-size:40px",
-  "color: green; font-size:40px; font-weight:bold",
-  "color: white; font-size:40px; background-color:blue"
-);
+// //EX3:
+// console.log(
+//   "%cElzero %cWeb %cSchool",
+//   "color: red; font-size:40px",
+//   "color: green; font-size:40px; font-weight:bold",
+//   "color: white; font-size:40px; background-color:blue"
+// );
+
+console.group("Group 1");
+console.log("Level 1");
+console.log("Level 2");
+console.group("Child Group");
+console.log("Level 1");
+console.log("Level 2");
+console.group("Grand Child Group");
+console.log("level 1");
+console.log("level 2");
+console.groupEnd();
+console.groupEnd();
+console.groupEnd();
+console.group("Group 2");
+console.log("level 1");
+console.log("level 2");

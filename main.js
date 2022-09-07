@@ -26,18 +26,22 @@
 //   "color: white; font-size:40px; background-color:blue"
 // );
 
-console.group("Group 1");
-console.log("Level 1");
-console.log("Level 2");
-console.group("Child Group");
-console.log("Level 1");
-console.log("Level 2");
-console.group("Grand Child Group");
-console.log("level 1");
-console.log("level 2");
-console.groupEnd();
-console.groupEnd();
-console.groupEnd();
-console.group("Group 2");
-console.log("level 1");
-console.log("level 2");
+// //EX4:
+// console.group("Group 1");
+// console.log("Level 1");
+// console.log("Level 2");
+// console.group("Child Group");
+// console.log("Level 1");
+// console.log("Level 2");
+// console.group("Grand Child Group");
+// console.log("level 1");
+// console.log("level 2");
+// console.groupEnd();
+// console.groupEnd();
+// console.groupEnd();
+// console.group("Group 2");
+// console.log("level 1");
+// console.log("level 2");
+
+//EX5:
+console.table(["Ezlero", "Ahmed", "Sameh", "Gamal", "Aya"]);

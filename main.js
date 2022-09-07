@@ -44,4 +44,13 @@
 // console.log("level 2");
 
 //EX5:
-console.table(["Ezlero", "Ahmed", "Sameh", "Gamal", "Aya"]);
+// console.table(["Ezlero", "Ahmed", "Sameh", "Gamal", "Aya"]);
+
+//EX6:
+console.log("I am a console");
+document.write("I am in a Page");
+
+//solution:
+
+console.clear();
+document.body.innerHTML = "";

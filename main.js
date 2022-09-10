@@ -1,56 +1,40 @@
-// console.log("Error");
-// console.table(["s", "x", "y", "z"]);
-// console.log(
-//   "%c------------------%c--------------",
-//   "color: red; font-size: 12px; font-weight: bold",
-//   "color: blue; font-size: 12px; font-weight: bold"
-// );
-// const body = document.getElementsByTagName("body");
-// const header = document.createElement("h1");
-// header.innerHTML = "YO YO";
-// header.setAttribute(
-//   "style",
-//   "color:blue; font-size: 80px; font-weight: bold; font-family: Arial; text-align: center;"
-// );
-// document.write(
-//   "<h1 style='color:blue; font-size: 80px; font-weight: bold; font-family: Arial; text-align: center;'> Hello world</h1>"
-// );
+// ===========================================
+// == Variables And Concatenation Challenge ==
+// ===========================================
 
-// document.body.appendChild(header);
+// [1] Create 3 Variables [Title, Desctiption, Date]
+// -- All In One Statement
+// -- Variable Name Must Be Two Words
+// -- Title Content Is "Elzero"
+// -- Description Content Is "Elzero Web School"
+// -- Date Content Is "25/10"
+// [2] Create Variable Contains Div And This Div Contains
+// -- H3 For Title
+// -- P For Paragraph
+// -- Span For Time
+// [3] Add This Card To Page 4 Times
+// [4] Use Template Literals For Concatenate
 
-// //EX3:
-// console.log(
-//   "%cElzero %cWeb %cSchool",
-//   "color: red; font-size:40px",
-//   "color: green; font-size:40px; font-weight:bold",
-//   "color: white; font-size:40px; background-color:blue"
-// );
+// Extra
+// - Use ES6 Repeat
 
-// //EX4:
-// console.group("Group 1");
-// console.log("Level 1");
-// console.log("Level 2");
-// console.group("Child Group");
-// console.log("Level 1");
-// console.log("Level 2");
-// console.group("Grand Child Group");
-// console.log("level 1");
-// console.log("level 2");
-// console.groupEnd();
-// console.groupEnd();
-// console.groupEnd();
-// console.group("Group 2");
-// console.log("level 1");
-// console.log("level 2");
+// Solution:
+//declaration:
+let title, desc, date;
+//initialization
+let name = "Kira Yoshikage";
 
-//EX5:
-// console.table(["Ezlero", "Ahmed", "Sameh", "Gamal", "Aya"]);
+title = "Elzero";
+desc = "Elzero Web School";
+date = "25/10";
 
-//EX6:
-console.log("I am a console");
-document.write("I am in a Page");
+const markup = `
+    <div>
+        <h3>${title}</h3>
+        <p>${desc}</p>
+        <span>${date}</span>
+    </div>
+`;
 
-//solution:
-
-console.clear();
-document.body.innerHTML = "";
+let result = markup.repeat(4);
+document.write(result);

@@ -128,4 +128,4 @@
 // console.log(Math.ceil(flt) - true); // 10
 
 //P7
-console.log(Math.random()*5); // 0 || 1 || 2 || 3 || 4
+console.log(Math.floor(Math.random()*5)); // 0 || 1 || 2 || 3 || 4

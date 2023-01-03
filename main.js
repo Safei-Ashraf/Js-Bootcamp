@@ -107,7 +107,12 @@
 // console.log(parseInt(Number.MAX_SAFE_INTEGER.toExponential(2))); // 16 // gets  9
 
 //P4
-let myVar = "100.56789 Views";
+// let myVar = "100.56789 Views";
 
-console.log(parseInt(myVar)); // 100
-console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57
+// console.log(parseInt(myVar)); // 100
+// console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57
+
+//P5
+let num = 10;
+
+console.log(Number.isInteger(num) + true); // 2

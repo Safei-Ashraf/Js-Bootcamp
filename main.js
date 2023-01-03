@@ -413,8 +413,19 @@
 // console.log(base);
 
 //P4
-let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+// let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
 
-// [-1, -10, 10, 20, -5, -3]
-let result = numsAndStrings.filter(elem => typeof (elem) == 'number').map(elem => -elem);
-console.log(result);
+// // [-1, -10, 10, 20, -5, -3]
+// let result = numsAndStrings.filter(elem => typeof (elem) == 'number').map(elem => -elem);
+// console.log(result);
+
+//P5
+// let nums = [2, 12, 11, 5, 10, 1, 99];
+
+// // 500
+
+// let result = nums.reduce((acc, curr) => {
+// 	return curr % 2 == 0 ? acc * curr : acc + curr;
+// }, 1);
+
+// console.log(result);

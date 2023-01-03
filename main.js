@@ -144,12 +144,25 @@
 // console.log(userName[userName.indexOf('E')].toLowerCase()); // e
 
 
-//P2
-let word = "Elzero";
-let letterZ = "z";
-let letterE = "e";
-let letterO = "O";
+// //P2
+// let word = "Elzero";
+// let letterZ = "z";
+// let letterE = "e";
+// let letterO = "O";
 
-console.log(word.includes(letterZ)); // True inclueds Z
-console.log(word.startsWith(letterE.toUpperCase())); // True starts with E
-console.log(word.endsWith(letterO.toLowerCase())); // True ends with O
+// console.log(word.includes(letterZ)); // True inclueds Z
+// console.log(word.startsWith(letterE.toUpperCase())); // True starts with E
+// console.log(word.endsWith(letterO.toLowerCase())); // True ends with O
+
+
+//Comparison & Logical Operators
+//الدروس من رقم 031 إلى رقم 032
+
+console.log(100 == "100"); // true
+console.log(100 !== 1000); // true
+console.log(110 != 100 != 10 != 20); // true
+console.log(-10 == "-10"); // true
+console.log(! (-50 >= +"-40")); // true
+console.log(! (10 >= -"-40")); // true
+console.log(! ("10" != 10)); // true
+console.log(! (20 === false)); // true

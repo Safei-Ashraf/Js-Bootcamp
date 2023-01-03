@@ -128,4 +128,17 @@
 // console.log(Math.ceil(flt) - true); // 10
 
 //P7
-console.log(Math.floor(Math.random()*5)); // 0 || 1 || 2 || 3 || 4
+// console.log(Math.floor(Math.random()*5)); // 0 || 1 || 2 || 3 || 4
+
+
+//الدروس من رقم 027 إلى رقم 030
+
+//P1
+
+let userName = "Elzero";
+console.log(userName[0].toLowerCase().repeat(3)); // eee
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.substring(0,1).toLowerCase()); // e
+console.log(userName.substr(0,1).toLowerCase()); // e
+console.log(userName[userName.indexOf('E')].toLowerCase()); // e

@@ -224,69 +224,120 @@
 
 // Edit What You Want Here
 
-let num1 = 4;
-let num2 = 2;
-let num3 = 4;
-let num4 = 27;
+// let num1 = 4;
+// let num2 = 2;
+// let num3 = 4;
+// let num4 = 27;
 
-/*
-  Do Not Edit Below This Line
-  Needed Output
-  True 7 Times
-*/
+// /*
+//   Do Not Edit Below This Line
+//   Needed Output
+//   True 7 Times
+// */
 
 // Condition 1
 
-if (num1 > num2) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 > num2) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 2
 
-if (num1 > num2 && num1 < num4) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 > num2 && num1 < num4) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 3
 
-if (num1 > num2 && num1 === num3) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 > num2 && num1 === num3) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 4
 
-if (num1 + num2 < num4) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 + num2 < num4) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 5
 
-if (num1 + num3 < num4) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 + num3 < num4) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 6
 
-if (num1 + num2 + num3 < num4) {
-	console.log("True");
-} else {
-	console.log("False");
-}
+// if (num1 + num2 + num3 < num4) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
 
 // Condition 7
 
-if (num4 - (num1 + num3) + num2 === 21) {
-	console.log("True");
-} else {
-	console.log("False");
+// if (num4 - (num1 + num3) + num2 === 21) {
+// 	console.log("True");
+// } else {
+// 	console.log("False");
+// }
+
+//[ 1 ] تكليفات خاصة ب [ Switch Statement ]
+let day = "   friday  ";
+// // You Need To Remove Spaces And Make First Letter Capital => Friday
+
+// let day = "Friday";
+// let day = "Saturday";
+// let day = "Sunday";
+// // Output => "No Appointments Available"
+
+// let day = "Monday";
+// let day = "Thursday";
+// // Output => "From 10:00 AM To 5:00 PM"
+
+// let day = "Tuesday";
+// // Output => "From 10:00 AM To 6:00 PM"
+
+// let day = "Wednesday";
+// // Output => "From 10:00 AM To 7:00 PM"
+
+// let day = "World";
+// // Output => "Its Not A Valid Day"
+
+day = day.trim().charAt(0).toUpperCase() + day.trim().slice(1);
+switch (day) {
+	case "Saturday":
+		console.log("No Appointments Available");
+		break;
+	case "Sunday":
+		console.log("No Appointments Available");
+		break;
+	case "Monday":
+		console.log("From 10:00 AM To 5:00 PM");
+		break;
+	case "Tuesday":
+		console.log("From 10:00 AM To 6:00 PM");
+		break;
+
+	case "Wednsday":
+		console.log("From 10:00 AM To 7:00 PM");
+		break;
+
+	case "Thursday":
+		console.log("From 10:00 AM To 5:00 PM");
+		break;
+	case "Friday":
+		console.log("No Appointments Available");
+		break;
+	default:
+		console.log("Its Not A Valid Day");
 }

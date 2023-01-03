@@ -389,13 +389,32 @@
 // console.log(result);
 
 //P2
-let myString = "EElllzzzzzzzeroo";
+// let myString = "EElllzzzzzzzeroo";
 
-// Elzero
-const result = myString
-	.split("")
-	.filter((letter, index, arr) => {
-		return arr.indexOf(letter) == index;
-	})
-	.join("");
+// // Elzero
+// const result = myString
+// 	.split("")
+// 	.filter((letter, index, arr) => {
+// 		return arr.indexOf(letter) == index;
+// 	})
+// 	.join("");
+// console.log(result);
+
+//P3
+
+// let myArray = ["E", "l", "z", ["e", "r"], "o"];
+
+// // Elzero
+
+// let base = myArray
+// 	.reduce((acc, current) => acc.concat(current))
+// 	.replace(",", "");
+
+// console.log(base);
+
+//P4
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+// [-1, -10, 10, 20, -5, -3]
+let result = numsAndStrings.filter(elem => typeof (elem) == 'number').map(elem => -elem);
 console.log(result);

@@ -364,15 +364,26 @@
 // console.log(friends); // ["Eman", "Osama"]
 
 //P6
-let arr1 = ["A", "C", "X"];
-let arr2 = ["D", "E", "F", "Y"];
-let allArrs = [];
+// let arr1 = ["A", "C", "X"];
+// let arr2 = ["D", "E", "F", "Y"];
+// let allArrs = [];
 
-// Your Code Here
-let y = arr2.pop();
-let x = arr1.pop();
-let f = arr2.pop();
-allArrs.push(f, x, y);
-allArrs = allArrs.toString().toLowerCase().replaceAll(",", "");
+// // Your Code Here
+// let y = arr2.pop();
+// let x = arr1.pop();
+// let f = arr2.pop();
+// allArrs.push(f, x, y);
+// allArrs = allArrs.toString().toLowerCase().replaceAll(",", "");
 
-console.log(allArrs); // fxy
+// console.log(allArrs); // fxy
+
+// [ 5 ] تكليفات خاصة ب [ Higher Order Functions ]
+let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+
+// Elzero
+
+const result = mix
+	.map((letter) => (isNaN(parseInt(letter)) ? letter : ""))
+	.reduce((acc, letter) => acc + letter);
+
+console.log(result);

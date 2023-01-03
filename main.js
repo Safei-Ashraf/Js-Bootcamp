@@ -378,12 +378,24 @@
 // console.log(allArrs); // fxy
 
 // [ 5 ] تكليفات خاصة ب [ Higher Order Functions ]
-let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+// let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+
+// // Elzero
+
+// const result = mix
+// 	.map((letter) => (isNaN(parseInt(letter)) ? letter : ""))
+// 	.reduce((acc, letter) => acc + letter);
+
+// console.log(result);
+
+//P2
+let myString = "EElllzzzzzzzeroo";
 
 // Elzero
-
-const result = mix
-	.map((letter) => (isNaN(parseInt(letter)) ? letter : ""))
-	.reduce((acc, letter) => acc + letter);
-
+const result = myString
+	.split("")
+	.filter((letter, index, arr) => {
+		return arr.indexOf(letter) == index;
+	})
+	.join("");
 console.log(result);

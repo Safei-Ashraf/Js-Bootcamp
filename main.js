@@ -46,11 +46,37 @@
 //EX5:
 // console.table(["Ezlero", "Ahmed", "Sameh", "Gamal", "Aya"]);
 
-//EX6:
-console.log("I am a console");
-document.write("I am in a Page");
+// //EX6:
+// console.log("I am a console");
+// document.write("I am in a Page");
 
-//solution:
+// //solution:
 
-console.clear();
-document.body.innerHTML = "";
+// console.clear();
+// document.body.innerHTML = "";
+
+/*Lessons from 018 - 022*/
+
+//Ex1:
+// Replace ? With Arithmetic Operators
+// console.log(10 ? 20 ? 15 ? 3 ? 190 ? 10 ? 400); // 0 Failed
+
+let num = 3;
+
+// Solution One
+console.log(num * num - num); // 6
+
+// Solution Two
+console.log(num + num); // 6
+
+// Soultion Three
+console.log(((num*num*num )/ (num*num)) + num); // 6
+
+// Soultion Four
+console.log(num/num * num+num); // 6
+
+// Solution Five
+console.log(((num*num + num*num)/num)); // 6
+
+// Solution Six
+console.log((num/(num*num))* (num**num) - num); // 6

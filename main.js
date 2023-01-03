@@ -100,8 +100,14 @@
 // console.log(Math.abs(-1e5)); // 100000
 
 //P2
-console.log(Number.MIN_SAFE_INTEGER); // 9007199254740991
+// console.log(Number.MIN_SAFE_INTEGER); // 9007199254740991
 
-//P3
+// //P3
 
-console.log(Number.MAX_SAFE_INTEGER); // 16
+// console.log(parseInt(Number.MAX_SAFE_INTEGER.toExponential(2))); // 16 // gets  9
+
+//P4
+let myVar = "100.56789 Views";
+
+console.log(parseInt(myVar)); // 100
+console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57

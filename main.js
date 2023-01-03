@@ -292,52 +292,87 @@
 // }
 
 //[ 1 ] تكليفات خاصة ب [ Switch Statement ]
-let day = "   friday  ";
-// // You Need To Remove Spaces And Make First Letter Capital => Friday
+// let day = "   friday  ";
+// // // You Need To Remove Spaces And Make First Letter Capital => Friday
 
-// let day = "Friday";
-// let day = "Saturday";
-// let day = "Sunday";
-// // Output => "No Appointments Available"
+// // let day = "Friday";
+// // let day = "Saturday";
+// // let day = "Sunday";
+// // // Output => "No Appointments Available"
 
-// let day = "Monday";
-// let day = "Thursday";
-// // Output => "From 10:00 AM To 5:00 PM"
+// // let day = "Monday";
+// // let day = "Thursday";
+// // // Output => "From 10:00 AM To 5:00 PM"
 
-// let day = "Tuesday";
-// // Output => "From 10:00 AM To 6:00 PM"
+// // let day = "Tuesday";
+// // // Output => "From 10:00 AM To 6:00 PM"
 
-// let day = "Wednesday";
-// // Output => "From 10:00 AM To 7:00 PM"
+// // let day = "Wednesday";
+// // // Output => "From 10:00 AM To 7:00 PM"
 
-// let day = "World";
-// // Output => "Its Not A Valid Day"
+// // let day = "World";
+// // // Output => "Its Not A Valid Day"
 
-day = day.trim().charAt(0).toUpperCase() + day.trim().slice(1);
-switch (day) {
-	case "Saturday":
-		console.log("No Appointments Available");
-		break;
-	case "Sunday":
-		console.log("No Appointments Available");
-		break;
-	case "Monday":
-		console.log("From 10:00 AM To 5:00 PM");
-		break;
-	case "Tuesday":
-		console.log("From 10:00 AM To 6:00 PM");
-		break;
+// day = day.trim().charAt(0).toUpperCase() + day.trim().slice(1);
+// switch (day) {
+// 	case "Saturday":
+// 		console.log("No Appointments Available");
+// 		break;
+// 	case "Sunday":
+// 		console.log("No Appointments Available");
+// 		break;
+// 	case "Monday":
+// 		console.log("From 10:00 AM To 5:00 PM");
+// 		break;
+// 	case "Tuesday":
+// 		console.log("From 10:00 AM To 6:00 PM");
+// 		break;
 
-	case "Wednsday":
-		console.log("From 10:00 AM To 7:00 PM");
-		break;
+// 	case "Wednsday":
+// 		console.log("From 10:00 AM To 7:00 PM");
+// 		break;
 
-	case "Thursday":
-		console.log("From 10:00 AM To 5:00 PM");
-		break;
-	case "Friday":
-		console.log("No Appointments Available");
-		break;
-	default:
-		console.log("Its Not A Valid Day");
-}
+// 	case "Thursday":
+// 		console.log("From 10:00 AM To 5:00 PM");
+// 		break;
+// 	case "Friday":
+// 		console.log("No Appointments Available");
+// 		break;
+// 	default:
+// 		console.log("Its Not A Valid Day");
+// }
+
+//Arrays
+
+// let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+// let num = 3;
+
+// // Method 1
+// myFriends.pop()
+// console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+
+// // Method 2
+// console.log(myFriends.filter(elem => elem !== myFriends[3])); // ["Ahmed", "Elham", "Osama"];
+
+//P3
+
+// let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+// // Write Your Code Here
+// friends.pop();
+// friends.shift();
+// console.log(friends); // ["Eman", "Osama"]
+
+//P6
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+// Your Code Here
+let y = arr2.pop();
+let x = arr1.pop();
+let f = arr2.pop();
+allArrs.push(f, x, y);
+allArrs = allArrs.toString().toLowerCase().replaceAll(",", "");
+
+console.log(allArrs); // fxy

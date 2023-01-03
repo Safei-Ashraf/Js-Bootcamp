@@ -119,10 +119,13 @@
 
 //P6
 
-let flt = 10.4;
+// let flt = 10.4;
 
-console.log(parseInt(flt)); // 10
-console.log(flt.toFixed(0)); // 10
-console.log(Math.round(flt)); // 10
-console.log(Math.floor(flt)); // 10
-console.log(Math.ceil(flt) - true); // 10
+// console.log(parseInt(flt)); // 10
+// console.log(flt.toFixed(0)); // 10
+// console.log(Math.round(flt)); // 10
+// console.log(Math.floor(flt)); // 10
+// console.log(Math.ceil(flt) - true); // 10
+
+//P7
+console.log(Math.random()*5); // 0 || 1 || 2 || 3 || 4

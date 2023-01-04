@@ -30,3 +30,35 @@ imgz.forEach((img) => {
 		img.setAttribute("alt", "Elzero New");
 	}
 });
+
+//P6: Challenge:
+//capture form, submit button and 3 input fields and result container:
+const elemForm = document.querySelectorAll("form")[1];
+const numInput = document.querySelector('[name="elements"]');
+const textInput = document.querySelector('[name="texts"]');
+const typeInput = document.querySelector("#type");
+const submitBtn = document.querySelector('[name="create"]');
+const container = document.querySelector(".results");
+
+//create elems:
+const section = document.createElement("section");
+const div = document.createElement("div");
+
+elemForm.onsubmit = (e) => {
+	e.preventDefault();
+	createElems(
+		numInput.value,
+		textInput.value,
+		typeInput.value.toLowerCase(),
+		container
+	);
+};
+
+function createElems(num, text, type, container) {
+	container.innerHTML = "";
+	for (let i = 0; i <= num; i++) {
+		const elem = document.createElement(type);
+		elem.textContent = text;
+		container.appendChild(elem);
+	}
+}

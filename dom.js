@@ -1,11 +1,11 @@
 //P1
 
-let imgs = document.querySelectorAll("img");
+// let imgs = document.querySelectorAll("img");
 
-imgs.forEach(
-	(img) =>
-		(img.src = "https://elzero.org/wp-content/themes/elzero/imgs/logo.png")
-);
+// imgs.forEach(
+// 	(img) =>
+// 		(img.src = "https://elzero.org/wp-content/themes/elzero/imgs/logo.png")
+// );
 
 //P2:
 let form = document.querySelector("form");
@@ -18,4 +18,15 @@ usdInput.addEventListener("input", (e) => {
 	ouput.textContent = `{${e.target.value}} USD Dollar = {${(
 		Number(e.target.value) * 25.6
 	).toFixed(2)}} Egyptian Pound`;
+});
+
+//P5:
+let imgz = document.querySelectorAll("img");
+
+imgz.forEach((img) => {
+	if (img.hasAttribute("alt")) {
+		img.setAttribute("alt", "old");
+	} else {
+		img.setAttribute("alt", "Elzero New");
+	}
 });

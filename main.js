@@ -433,17 +433,51 @@
 //[ 4 ] تكليفات خاصة ب [ Objects And Methods ]
 
 // Create Your Object Here
-const member = {
-	name: "Elzero",
-	age: 30,
-	country: "Egypt",
-	fullDetails: function () {
-		return `My Name Is ${this.name}, My Age Is ${this.age}, I Live in ${this.country}`;
-	},
-};
+// const member = {
+// 	name: "Elzero",
+// 	age: 30,
+// 	country: "Egypt",
+// 	fullDetails: function () {
+// 		return `My Name Is ${this.name}, My Age Is ${this.age}, I Live in ${this.country}`;
+// 	},
+// };
 
-console.log(member.name); // Elzero
-console.log(member.age); // 38
-console.log(member.country); // Egypt
-console.log(member.fullDetails());
-// My Name Is Elzero, My Age Is 38, I Live in Egypt
+// console.log(member.name); // Elzero
+// console.log(member.age); // 38
+// console.log(member.country); // Egypt
+// console.log(member.fullDetails());
+// // My Name Is Elzero, My Age Is 38, I Live in Egypt
+
+//P2
+// Method One
+// Create Your Object Here
+// const objMethodOne = {
+// 	property: "methodOne",
+// };
+// const objMethodTwo = new Object({ property: "method two" });
+
+// const objMethodThree = Object.create({ property: "method three" });
+
+// class Obj4 {
+// 	constructor(property) {
+// 		this.property = property;
+// 	}
+// }
+// objMethodFour = new Obj4("Method Four");
+
+// console.log(objMethodOne.property); // "Method One"
+
+// // Method Two
+// // Create Your Object Here
+
+// console.log(objMethodTwo.property); // "Method Two"
+
+// // Method Three
+// // Create Your Object Here
+
+// console.log(objMethodThree.property); // "Method Three"
+
+// // Method Four
+// // Create Your Object Here
+
+// console.log(objMethodFour.property); // "Method Four"

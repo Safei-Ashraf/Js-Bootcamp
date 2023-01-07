@@ -52,6 +52,9 @@ elemForm.onsubmit = (e) => {
 		typeInput.value.toLowerCase(),
 		container
 	);
+	numInput.value = "";
+	textInput.value = "";
+	typeInput.value = "";
 };
 
 function createElems(num, text, type, container) {
